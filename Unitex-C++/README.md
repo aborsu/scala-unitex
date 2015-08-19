@@ -24,10 +24,11 @@ UnitexJni.dll:
 Go to unitex\Unitex-C++\build
 Open UnitexToolAndLib_vs2013.sln (Visual Studio)
 
-Build the Solution Config -> Release Platforms -> x64
+Build the Solution (Config -> Release) and (Platforms -> x64)
 
-In case of : ```Error	22	error C1083: Cannot open source file: '..\tre-0.8.0\lib\regcomp.c': No such file or directory	(...)```
-	- Copy tre-0.8.0/ and yaml-0.1.6/ from build/ to the parent folder
+In case of : 
+* ```Error	22	error C1083: Cannot open source file: '..\tre-0.8.0\lib\regcomp.c': No such file or directory	(...)```<br />
+* --> Copy tre-0.8.0/ and yaml-0.1.6/ from build/ to the parent folder<br />
 	
 The output will be in build\x64\UnitexJni\Release, only the .dll is needed
 	
