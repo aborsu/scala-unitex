@@ -13,3 +13,5 @@ src_managed/
 project/boot/
 project/plugins/project/
 
+#Unitex C++ // The source code is available from the Unitex Website
+Unitex-C++/*
