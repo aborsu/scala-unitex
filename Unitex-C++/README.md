@@ -17,16 +17,17 @@ This folder should contain three files:
 Move them to the lib folder in the scala-unitex project.
 
 ##To compile unitex for windows(64bit):
+UnitexJni.jar:
+Located in unitex\Unitex-C++\bin
 
-unitex\Unitex-C++\bin contient le UnitexJni.jar
+UnitexJni.dll:
+Go to unitex\Unitex-C++\build
+Open UnitexToolAndLib_vs2013.sln (Visual Studio)
 
-unitex\Unitex-C++\build contient UnitexToolAndLib_vs2013.sln, à ouvrir avec Visual Studio (2013)
-	-> Compile en Release x64
-	-> Erreurs :
-		-> Path ../tre et ../yaml
-		-> copy tre-0.8.0 & yaml-0.1.6 dans le dossier parent
+Build the Solution Config -> Release Platforms -> x64
+
+In case of : ```Error	22	error C1083: Cannot open source file: '..\tre-0.8.0\lib\regcomp.c': No such file or directory	(...)```
+	* Copy tre-0.8.0/ and yaml-0.1.6/ from build/ to the parent folder
 	
--		-> Path JNI
--			-> Ouvrir les propriété de UnitexJNI, sous C/C++ > General > Additional Include Directories, ajouter le path vers le JNI de java (genre C:/program files/java ...)
+The output will be in build\x64\UnitexJni\Release, only the .dll is needed
 	
--> Résultat est dans "unitex\Unitex-C++\build\x64\UnitexJni\Release", le .dll suffit
