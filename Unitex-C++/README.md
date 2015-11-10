@@ -16,6 +16,9 @@ This folder should contain three files:
 
 Move them to the lib folder in the scala-unitex project.
 
+##To compile unitex for OSX (plus view linux):
+```make 64BITS=yes TRE_DIRECT_COMPILE=yes JNILIBRARY=yes ADDITIONAL_CFLAG+=-I/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/include/darwin ADDITIONAL_CFLAG+=-I/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/include```
+
 ##To compile unitex for windows(64bit):
 UnitexJni.jar:
 Located in unitex\Unitex-C++\bin
